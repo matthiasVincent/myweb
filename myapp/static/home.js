@@ -5,7 +5,7 @@
  var div = document.querySelectorAll(".show")
  const edu = document.querySelectorAll(".bc")
  const sp = document.querySelectorAll(".ac")
- const tabs = document.querySelectorAll(".tab-pan")
+ const tabs = document.querySelectorAll(".tab-pan") //get all tab contents
  console.log(tabs.length)
 
  for (let i=0; i<edu.length;i++)
