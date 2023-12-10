@@ -37,33 +37,33 @@
                 {% block navbar %}
                 <li class="nav-item lit act">
                     <div class="show act"></div> 
-                    <a href="#menu1" class="nav-link active h4" data-toggl="pill" title="home" style="font-size:20px;">
+                    <a href="#menu1" class="nav-link text-white h4" data-toggl="pill" title="home" style="font-size:20px;">
                     home
                 </a></li>
                 <li class="nav-item lit">
                     <div class="show"></div>
-                    <a href="#menu2" class="nav-link h4" data-toggl="pill" title="about" style="font-size:20px;">
+                    <a href="#menu2" class="nav-link  text-white h4" data-toggl="pill" title="about" style="font-size:20px;">
                     about
                 </a></li>
                 <li class="nav-item lit">
                     <div class="show"></div>
-                    <a href="#menu3" class="nav-link h4" data-toggl="pill" title="Portfolio" style="font-size:20px;">
+                    <a href="#menu3" class="nav-link text-white h4" data-toggl="pill" title="Portfolio" style="font-size:20px;">
                     portfolio
                 </a></li>
                 <li class="nav-item lit">
                     <div class="show"></div>
-                    <a href="#menu4" class="nav-link h4" data-toggl="pill" title="contact" style="font-size:20px;">
+                    <a href="#menu4" class="nav-link text-white h4" data-toggl="pill" title="contact" style="font-size:20px;">
                     contact
                 </a></li>
                 {% block nav %}
                 {% if user.is_authenticated %}
                     <li class="nav-item">
-                    <a href="{% url 'signout' %}" class="nav-link h4" style="font-size:20px;">
+                    <a href="{% url 'signout' %}" class="nav-link text-white h4" style="font-size:20px;">
                     logout, {{user.username}}
                     </a></li>
                 {% else %}
                     <li class="nav-item">
-                    <a href="{% url 'signin' %}" class="nav-link h4" title="Signup" style="font-size:20px;">
+                    <a href="{% url 'signin' %}" class="nav-link text-white h4" title="Signup" style="font-size:20px;">
                         Login
                     </a></li>
                     {% endif %}
